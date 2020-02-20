@@ -1,0 +1,74 @@
+h1{
+    color: sandybrown;
+}
+h1::before{
+    content: "Hello";
+    color: yellow;
+    font-size: 12px;
+    background-color: blueviolet;
+}
+.special-effect::after{
+    content: "Bye";
+    font-size: 15px;
+    background-color: brown;
+}
+.special-effect:hover{
+    background: seagreen;
+    font-size: 50px;
+    transition: 2s;
+}
+
+input:focus{
+    font-weight: 700;
+    color: seagreen;
+    font-size: 30px;
+}
+li:first-child{
+    background-color: sienna;
+    color: silver;
+}
+li:last-child{
+    background-color: slateblue;
+    color: steelblue;
+}
+li:nth-child(3n+1){
+    background-color: tomato;
+}
+a:visited{
+    color: violet;
+}
+body{
+    counter-reset: section;
+}
+p::before{
+    
+    counter-increment: section;
+    content:"❤️" counter(section) ": ";
+    font-size: 30px;
+    
+}
+.container{
+    background-color: chartreuse;
+}
+div{
+    height: 100px;
+    width: 100px;
+}
+.first{
+    background-color: blue;
+    position: relative;
+    left: 60px;
+    top: 100px;
+}
+.second{
+    background-color: cornsilk;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+.third{
+    background-color: cyan;
+}
+h4{
+    font-size: 50px;;
+}
